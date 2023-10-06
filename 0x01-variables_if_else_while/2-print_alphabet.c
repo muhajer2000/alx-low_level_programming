@@ -20,7 +20,7 @@ int main(void)
 		putchar(ch);
 		ch++;
 	}
-	putchar("%c\n");
+	putchar(ch);
 	return (0);
 
 
