@@ -20,6 +20,6 @@ int main(void)
 		chr--;
 	}
 	putchar('\n');
-	
+
 	return (0);
 }
