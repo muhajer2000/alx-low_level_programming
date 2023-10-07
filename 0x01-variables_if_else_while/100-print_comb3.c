@@ -23,7 +23,7 @@ int main(void)
 			if((num1 != num2) && (num1 < num2))
 			{
 				putchar(num1 = 48);
-				putchar(num2 =48);
+				putchar(num2 = 48);
 
 				if (num1 + num2 !=17)
 				{
@@ -35,7 +35,7 @@ int main(void)
 		}
 		num1++;
 	}
-	putchar('\n');
+	putchar("\n");
 
 	return(0);
 }
