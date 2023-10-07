@@ -1,12 +1,9 @@
 #include <stdio.h>
-#include <unistd.h>
 
 /**
- * main - Entry point
- *-Dora korpar, 2015-10-19
- * Description: A C code that print a quote by use write function
+ * main - entry point for quote.c
  *
- * Return: Always 1 (unsuccess)
+ * return 0 (success)
 */
 
 int main(void)
