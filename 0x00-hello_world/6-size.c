@@ -1,14 +1,10 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
- * main - Entry point
+ * main - print size of verious type
  *
- * Description: A C code that print size of various type by sizeof function
- *
- * Return: Always 0 (success)
+ * return 0 (succes)
 */
-
 int main(void)
 {
 	char a;
@@ -17,10 +13,10 @@ int main(void)
 	long long int d;
 	float e;
 
-	printf("size of a char: %zu byte(s)\n", sizeof(a));
-	printf("size of an int: %zu byte(s)\n", sizeof(b));
-	printf("size of a long int: %zu byte(s)\n", sizeof(c));
-	printf("size of a long long int: %zu byte(s)\n", sizeof(d));
-	printf("size of a float: %zu byte(s)\n", sizeof(e));
+	printf("size of a char: %d  byte(s)", sizeof(a));
+	printf("size of an int: %d byte(s)", sizeof(b));
+	printf("size of a long int: %d byte(s)", sizeof(c));
+	printf("size of a long long int: %d byte(s)", sizeof(d));
+	printf("size of a float: %d  byte(s)", sizeof(e));
 	return (0);
 }
