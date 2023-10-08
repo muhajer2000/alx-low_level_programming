@@ -1,41 +1,35 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
- * main - Entry point
+ * main - Entry point 
  *
- * Description: A C code porgramming that code while loop function
+ * Description : write C code print tow digit number
  *
- * Return: Always 0 (success)
+ * return 0 always succses
 */
-
 int main(void)
 {
-	int num1 = 0, num2;
-
-	while (num1 <= 9)
+	int number1 = 0, number2;
+	while (number1 <= 9)
 	{
-		num2 = 0;
-
-		while (num2 <= 9)
+		number2 = 0;
+		while ( number2 <= 9)
 		{
-			if(num1 != num2 && num1 + num2)
-			{
-				putchar(num1 = 48);
-				putchar(num2 = 48);
+			if ( (number1 != number2) && (number1 < number2))
+				putchar(number1 + 48);
+				putchar(number2 + 48);
 
-				if (num1 + num2 != 17)
+				if ((number1 + number2) != 17)
 				{
 					putchar(',');
 					putchar(' ');
 				}
-			}
-		num2++;
+				number2++;
 		}
-	num1++;
+		number1++;	
 	}
+	
 	putchar('\n');
+	return (0);
 
-	return(0);
 }
