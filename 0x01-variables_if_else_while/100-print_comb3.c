@@ -2,7 +2,8 @@
 
 /**
 *main - Entry point
-*Descrpition: A C code programming for print combo  while loop
+*Description: print all possible different
+*		combinations of two digits
 *return 0 always succes
 */
 
