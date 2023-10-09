@@ -11,6 +11,7 @@
 int main(void)
 {
 	int firstnum = 0, scenum;
+
 	while (firstnum < 100)
 	{
 		scenum = 0;
@@ -23,8 +24,8 @@ int main(void)
 				putchar(' ');
 				putchar((scenum / 10) + 48);
 				putchar((scenum % 10) + 48);
- 
-	if (firstnum != 98 || scenum != 99)
+
+				if (firstnum != 98 || scenum != 99)
 				{
 					putchar(',');
 					putchar(' ');
