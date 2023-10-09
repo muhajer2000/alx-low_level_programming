@@ -2,9 +2,11 @@
 #include <unistd.h>
 
 /**
- * main - entry point for quote.c
+ * main - Entry point
  *
- * return 0 (success)
+ * Description: A C code programming print qoute file un success
+ *
+ * Return: 1 (unsuccess)
 */
 
 int main(void)
