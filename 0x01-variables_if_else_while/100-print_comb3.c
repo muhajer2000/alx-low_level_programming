@@ -1,25 +1,26 @@
 #include <stdio.h>
 
 /**
- * main - Entry point for while loop 
- *
- * Description : write A C code print two digit number use loop
- *
- * return 0 always succses
+*main - Entry point
+*Description: A C code programming for print while loop
+*return 0 always succes
 */
+
 int main(void)
 {
 	int number1 = 0, number2;
+
 	while (number1 <= 9)
 	{
 		number2 = 0;
-		while ( number2 <= 9)
+
+		while (number2 <= 9)
 		{
 			if ((number1 != number2) && (number1 < number2))
 			{
-		 		putchar(number1 + 48);
+				putchar(number1 + 48);
 				putchar(number2 + 48);
-			
+
 				if (number1 + number2 != 17)
 				{
 					putchar(',');
@@ -28,9 +29,8 @@ int main(void)
 			}
 			number2++;
 		}
-		number1++;	
+		number1++;
 	}
-	
 	putchar('\n');
 	return (0);
 
