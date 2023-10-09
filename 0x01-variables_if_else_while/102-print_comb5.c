@@ -16,15 +16,15 @@ int main(void)
 		scenum = 0;
 		while (scenum <= 99)
 		{
-			if (scenum != firstnum)
+			if (firstnum != scenum)
 			{
 				putchar((firstnum / 10) + 48);
 				putchar((firstnum % 10) + 48);
 				putchar(' ');
 				putchar((scenum / 10) + 48);
 				putchar((scenum % 10) + 48);
-
-				if (firstnum != 98 || scenum != 99)
+ 
+	if (firstnum != 98 || scenum != 99)
 				{
 					putchar(',');
 					putchar(' ');
