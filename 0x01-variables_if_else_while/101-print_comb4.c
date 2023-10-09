@@ -16,7 +16,6 @@ int main(void)
         while (number1 <= 9)
         {
                 number2 = 0;
-
                 while (number2 <= 9)
                 {
 			number3 = 0;
@@ -33,7 +32,7 @@ int main(void)
 
 			
 
-					if (number1 + number2 + number2 != 24)
+					if (number1 + number2 + number3 != 24)
 					{
 						putchar(',');
 						putchar(' ');
