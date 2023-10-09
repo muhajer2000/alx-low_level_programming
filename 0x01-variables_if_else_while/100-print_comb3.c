@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point 
+ * main - Entry point for while loop 
  *
- * Description : write C code print tow digit number
+ * Description : write A C code print two digit number use loop
  *
  * return 0 always succses
 */
@@ -15,17 +15,18 @@ int main(void)
 		number2 = 0;
 		while ( number2 <= 9)
 		{
-			if (number1 != number2	&& number1 < number2)
+			if ((number1 != number2) && (number1 < number2))
 			{
 		 		putchar(number1 + 48);
 				putchar(number2 + 48);
-			}
-				if ((number1 + number2) != 17)
+			
+				if (number1 + number2 != 17)
 				{
 					putchar(',');
 					putchar(' ');
 				}
-				number2++;
+			}
+			number2++;
 		}
 		number1++;	
 	}
