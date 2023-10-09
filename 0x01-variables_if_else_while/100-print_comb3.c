@@ -2,7 +2,7 @@
 
 /**
 *main - Entry point
-*Description: A C code programming for print while loop
+*Descrpition: A C code programming for print combo  while loop
 *return 0 always succes
 */
 
