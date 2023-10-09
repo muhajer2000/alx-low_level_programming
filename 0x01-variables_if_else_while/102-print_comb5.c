@@ -11,12 +11,12 @@
 int main(void)
 {
 	int firstnum = 0, scenum;
-	while (firstnum <= 99)
+	while (firstnum < 100)
 	{
 		scenum = 0;
-		while (scenum <= 99)
+		while (scenum < 100)
 		{
-			if (firstnum != scenum)
+			if (firstnum < scenum)
 			{
 				putchar((firstnum / 10) + 48);
 				putchar((firstnum % 10) + 48);
