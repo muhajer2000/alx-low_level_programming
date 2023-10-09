@@ -15,11 +15,11 @@ int main(void)
 		number2 = 0;
 		while ( number2 <= 9)
 		{
-			if ((number1 != number2) && (number1 < number2))
-
+			if (number1 != number2	&& number1 < number2)
+			{
 		 		putchar(number1 + 48);
 				putchar(number2 + 48);
-
+			}
 				if ((number1 + number2) != 17)
 				{
 					putchar(',');
