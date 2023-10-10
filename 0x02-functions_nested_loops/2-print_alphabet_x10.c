@@ -20,8 +20,7 @@ void print_alphabet_x10(void)
 
 		
 		}
-	_putchar('\n');	
-	line++;
+		line++;
 	}
 	_putchar('\n');
 
