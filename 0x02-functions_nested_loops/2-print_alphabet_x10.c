@@ -17,12 +17,13 @@ void print_alphabet_x10(void)
 		{
 			_putchar(ch);
 			ch++;
+			_putchar('\n');
 			
 		
 		}
 		line++;
 	
 	}
-	_putchar('\n','\n');
+   //_putchar('\n');
 
 }
