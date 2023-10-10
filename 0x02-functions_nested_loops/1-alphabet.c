@@ -1,21 +1,20 @@
 #include "main.h"
 
 /**
- * main - Entry point print alphabet
+ * print_alphabet - Entry point print alphabet
  *
- * Return: Always 0 ( Success)
+ * 
 */
 
-int main(void)
+void print_alphabet(void);
 {
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
+	char ch='a';
+	while ( ch <= 'z')
+	{	
+		_putchar(ch);
+		ch++;
+	}
 	_putchar('\n');
-	return (0);
+	
 
 }
