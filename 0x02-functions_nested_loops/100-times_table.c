@@ -19,27 +19,40 @@ void print_times_table(int n)
 			
 			for (mult = 1; mult <= n; mult++)
 			{	
-				_putchar(',');
-				_putchar(' ');
+				
+				
 				proud = num * mult;
-
-				if (proud <= 9)
-					_putchar(' ');
-				if (proud <= 99)
-					_putchar(' ');
-				if (proud >= 100)
+				if (mult == 0)
 				{
+					_putchar(proud + 48);
+				}else if (proud < 10 && mult != 0)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(proud + 48);
+
+				}else if (proud >= 10 && proud < 100)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar((proud / 10) + 48);
+					_putchar((proud % 10) + 48);
+
+				}else if (proud >= 100)
+				{
+					_putchar(',');
+					_putchar(' ');
 					_putchar((proud / 100) + 48);
-					_putchar((proud / 10) % 10 + 48);
+					_putchar(((proud / 10) % 10) + 48);
+					_putchar((proud % 10) + 48);
 
 				}
-				else if ( proud <= 99 && proud >= 10)
 				
-					_putchar((proud / 10) + 48);
-				_putchar((proud % 10) + 48);
 			}	
-		}
-		_putchar('\n');
+		}	_putchar('\n');
 
 	}		
 
