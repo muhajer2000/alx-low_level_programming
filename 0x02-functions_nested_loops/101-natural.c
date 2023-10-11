@@ -14,7 +14,7 @@ int main(void)
 	{	
 		if (((number % 3) == 0) || ((number % 5) == 0))
 		{	
-			sum <= number;
+			sum == number;
 		}
 	}
 	printf("%d\n", sum);
