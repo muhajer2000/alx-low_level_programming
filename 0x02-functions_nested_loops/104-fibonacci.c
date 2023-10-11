@@ -23,9 +23,9 @@ int main(void)
 
 	}
 	fib11 = fib1 / 1000000000;
-	fib12 = fib1 / 1000000000;
+	fib12 = fib1 % 1000000000;
 	fib21 = fib2 / 1000000000;
-	fib22 = fib2 / 1000000000;
+	fib22 = fib2 % 1000000000;
 
 	for (count = 92; count < 99; ++count)
 	{
