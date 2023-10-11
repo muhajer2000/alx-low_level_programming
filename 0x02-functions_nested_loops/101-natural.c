@@ -21,12 +21,12 @@ int main(void)
 			sum3 = sum3 + number;
 		} else if ((number % 5) == 0)
 		{
-			sum5 = sum5 + number
+			sum5 = sum5 + number;
 		
 		}
 		
 	}
-	sum = sum3 + sum5
+	sum = sum3 + sum5;
 	printf("%d\n", sum);
 	return (0);
 
