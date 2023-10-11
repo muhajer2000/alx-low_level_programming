@@ -13,12 +13,13 @@ void print_times_table(int n)
 	if (n <= 15 && n >= 0)
 	{
 		for (num = 0; num <= n; num++)
+		{	
 			_putchar(48);
 			
 			
 			for (mult = 1; mult <= n; mult++)
 				_putchar(',');
-				_putchar(' ');
+			{	_putchar(' ');
 				proud = num * mult;
 
 				if (proud < 9)
@@ -35,7 +36,8 @@ void print_times_table(int n)
 					
 					_putchar((proud / 10) + 48);
 				_putchar((proud % 10 ) + 48);
-			_putchar('\n');
+			}	
+		}	_putchar('\n');
 
 	}		
 
