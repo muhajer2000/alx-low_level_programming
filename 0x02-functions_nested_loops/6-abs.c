@@ -5,7 +5,7 @@
  * @n: the check of int
  * Retutn: the value of int
 */
-int _abs()
+int _abs(int n)
 {
 	if (n >= 0)
 	{
