@@ -22,15 +22,15 @@ int main(void)
 		fib1 = fib2 - fib1;
 
 	}
-	fib11 = fib1 / 100000000;
-	fib12 = fib1 % 100000000;
-	fib21 = fib2 / 100000000;
-	fib22 = fib2 % 100000000;
+	fib11 = fib1 / 1000000000;
+	fib12 = fib1 % 1000000000;
+	fib21 = fib2 / 1000000000;
+	fib22 = fib2 % 1000000000;
 
 	for (count = 92; count < 99; ++count)
 	{
-		printf(", %lu", fib21 + ( fib22 / 100000000));
-		printf("%lu", fib22 % 100000000);
+		printf(", %lu", fib21 + ( fib22 / 1000000000));
+		printf("%lu", fib22 % 1000000000);
 		fib21 = fib21 + fib11;
 		fib11 = fib21 - fib11;
 		fib22 = fib22 + fib12;
