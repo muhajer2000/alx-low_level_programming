@@ -27,7 +27,7 @@ int main(void)
 	fib21 = fib2 / 1000000000;
 	fib22 = fib2 % 1000000000;
 
-	for (count = 92; count < 99; ++count)
+	for (count = 92; count < 99; count++)
 	{
 		printf(", %lu", fib21 + ( fib22 / 1000000000));
 		printf("%lu", fib22 % 1000000000);
@@ -36,6 +36,8 @@ int main(void)
 		fib22 = fib22 + fib12;
 		fib21 = fib22 - fib12;		
 	}
+
+	
 	printf("\n");
 	return (0);
 	
