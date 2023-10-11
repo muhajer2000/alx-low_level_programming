@@ -34,11 +34,12 @@ void print_times_table(int n)
 
 				}
 				else if ( proud <= 99 && proud >= 10)
-					
+				
 					_putchar((proud / 10) + 48);
-				_putchar((proud % 10 ) + 48);
+				_putchar((proud % 10) + 48);
 			}	
-		}	_putchar('\n');
+		}
+		_putchar('\n');
 
 	}		
 
