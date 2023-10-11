@@ -8,8 +8,8 @@
 */
 int main(void)
 {
-	unsigned long int count, fib1, fib2, fib11, fib12, fib21, fib22;
-
+	unsigned long int  fib1, fib2, fib11, fib12, fib21, fib22;
+	int count;
         fib1 = 1;
 	fib2 = 2;
 
