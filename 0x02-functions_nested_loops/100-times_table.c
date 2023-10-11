@@ -18,18 +18,19 @@ void print_times_table(int n)
 			
 			
 			for (mult = 1; mult <= n; mult++)
+			{	
 				_putchar(',');
-			{	_putchar(' ');
+				_putchar(' ');
 				proud = num * mult;
 
-				if (proud < 9)
+				if (proud <= 9)
 					_putchar(' ');
-				if (proud < 99)
+				if (proud <= 99)
 					_putchar(' ');
-				if (proud > 100)
+				if (proud >= 100)
 				{
 					_putchar((proud / 100) + 48);
-					_putchar((proud / 10) /10 + 48);
+					_putchar((proud / 10) % 10 + 48);
 
 				}
 				else if ( proud <= 99 && proud >= 10)
