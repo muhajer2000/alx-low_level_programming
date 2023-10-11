@@ -36,7 +36,7 @@ int main(void)
 		fib22 = fib22 + fib12;
 		fib21 = fib22 - fib12;		
 	}
-	printf("\n")
+	printf("\n");
 	return (0);
 	
 
