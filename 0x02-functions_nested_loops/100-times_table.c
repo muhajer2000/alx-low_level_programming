@@ -42,6 +42,7 @@ void print_times_table(int n)
 					_putchar(((proud / 10) % 10) + 48);
 					_putchar((proud % 10) + 48);
 				}
+			}
 			_putchar('\n');
 		}
 	}
