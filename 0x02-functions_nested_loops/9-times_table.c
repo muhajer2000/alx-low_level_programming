@@ -18,17 +18,17 @@ void times_table(void)
 			proud = num * mult;
 			
 			if (proud < 10)
-			{
+			
 				_putchar(' ');
 			else
 				_putchar((proud / 10) + 48);
-				_putchar((proud % 10) + 48);
+		        _putchar((proud % 10) + 48);
 			
-			}
-			_putchar('\n');
+			
+		
 		
 		}	
-	
+		_putchar('\n');
 	}
 
 }
