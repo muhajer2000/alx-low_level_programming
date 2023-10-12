@@ -10,11 +10,12 @@ int main(void)
 {
 	unsigned long int  fib1, fib2, fib11, fib12, fib21, fib22;
 	int count;
-        fib1 = 1;
+
+	fib1 = 1;
 	fib2 = 2;
 
 	printf("%lu", fib1);
-	
+
 	for (count = 1; count < 91; count++)
 	{
 		printf(", %lu", fib2);
@@ -29,18 +30,18 @@ int main(void)
 
 	for (count = 92; count < 99; ++count)
 	{
-		printf(", %lu", fib21 + ( fib22 / 1000000000));
+		printf(", %lu", fib21 + (fib22 / 1000000000));
 		printf("%lu", fib22 % 1000000000);
 		fib21 = fib21 + fib11;
 		fib11 = fib21 - fib11;
 		fib22 = fib22 + fib12;
-		fib21 = fib22 - fib12;		
+		fib21 = fib22 - fib12;
 	}
 
-	
+
 	printf("\n");
 	return (0);
-	
+
 
 
 }
