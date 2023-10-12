@@ -14,7 +14,8 @@ void more_numbers(void)
 		if (line == 2 || line == 4)
 			continue;
 		_putchar(line + 48);
-	_putchar('\n');
+
 	}
+	_putchar('\n');
 
 }
