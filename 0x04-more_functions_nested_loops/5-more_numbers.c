@@ -20,8 +20,8 @@ void more_numbers(void)
 			_putchar(count % 10 + 48);
 			}
 
+		_putchar('\n');
 		}
-	_putcahr('\n');
 
 	}
 
