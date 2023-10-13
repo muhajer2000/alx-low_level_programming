@@ -21,7 +21,7 @@ void more_numbers(void)
 			}
 
 		}
-		_putcahr('\n');
+	_putcahr('\n');
 
 	}
 
