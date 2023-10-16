@@ -11,7 +11,7 @@ int _strlen(char *s)
 {
 	int contuner;
 
-	contiuner = 0;
+	contuner = 0;
 
 	while (s[contuner] != '\0')
 	{
