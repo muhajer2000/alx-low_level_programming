@@ -2,12 +2,12 @@
 
 /**
  * leet -  a function that encodes a string into 1337
- * @a: string to be ecoded
+ * @s: string to be ecoded
  *
  * Return: the result of string
  *
 */
-char *leet(char *a)
+char *leet(char *s)
 {
 	int i, j;
 
