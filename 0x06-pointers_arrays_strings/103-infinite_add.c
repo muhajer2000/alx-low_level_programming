@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
  * infinite_add - add 2 number together
  * @n1: text reper 1st number to add
@@ -25,28 +24,22 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	if (q + 1 > size_r)
 		return (0);
 	r[q] = '\0';
-
 	for (p = q - 1; p >= 0; p--)
 	{
 		i--;
 		j--;
 		if (i >= 0)
-		
 			f = n1[i] - '0';
 		else
 			f = 0;
-		
+
 		if (j >= 0)
-		
 			s = n2[j] - '0';
 		else
 			s = 0;
-		
-
 		r[p] = (f + s + d) % 10 + '0';
 		d = (f + s + d) / 10;
 	}
-
 	if (d == 1)
 	{
 		r[q + 1] = '\0';
