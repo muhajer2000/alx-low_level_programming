@@ -52,7 +52,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			return (0);
 		while (q-- >= 0)
 			r[q + 1] = r[q];
-		r[0] = d + '0'
+		r[0] = d + '0';
 	}
 	return (r);
 }
