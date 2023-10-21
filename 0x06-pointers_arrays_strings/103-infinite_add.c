@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * infinite_add - add 2 number together
@@ -10,7 +11,8 @@
 */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int i = 0, j = 0, p, q = 0, f, s, d = 0;
+	int i = 0, j = 0, p, q = 0;
+	int f, s, d = 0;
 
 	while (n1[i] != '\0')
 		i++;
@@ -29,17 +31,17 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		i--;
 		j--;
 		if (i >= 0)
-		{
+		
 			f = n1[i] - '0';
 		else
 			f = 0;
-		}
+		
 		if (j >= 0)
-		{
+		
 			s = n2[j] - '0';
 		else
 			s = 0;
-		}
+		
 
 		r[p] = (f + s + d) % 10 + '0';
 		d = (f + s + d) / 10;
