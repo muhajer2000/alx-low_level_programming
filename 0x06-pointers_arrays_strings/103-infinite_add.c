@@ -1,80 +1,53 @@
 #include "main.h"
 
 /**
- * rev_string - reverse array
- * @n: intger params
- * return: 0
-*/
-
-void rev_string(char *n)
-{
-	int i = 0;
-	int j = 0;
-	char temp;
-
-	while (*(n + i) != '\0')
-	{
-		i++;
-	}
-	i--;
-
-	for (j = 0; j < i; j++; i--)
-	{
-		temp = *(n + j);
-		*(n + j) = *(n + i);
-		*(n + i) = temp;
-	}
-
-}
-
-/**
- * infinite_add - a function that adds two numbers.
- * @n1: text repr 1st number
- * @n2: text repr 2nd number
+ * infinite_add - add 2 number together
+ * @n1: text reper 1st number to add
+ * @n2: text reper 2nd number to add
  * @r: pointer to buffer
  * @size_r: buffer size
- * Return: pointer to calling
+ * Return: pointer to calling function
 */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int o_f = 0, x = 0, y = 0, num = 0;
-	int val1 = 0, val2 = 0, t_tot = 0;
+	int i = 0, j = 0, p, q = 0, f, s, d = 0;
 
-	while (*(n1 + x) != '\0')
-		x++;
-	while (*(n2 + y) != '\0')
-		y++;
-	x--;
-	y--;
-
-	if (y >= size_r || x >= size_r)
+	while (n1[i] != '\0')
+		i++;
+	while (n2[j] != '\0')
+		j++;
+	if (i > j)
+		q = i;
+	else
+		q = j;
+	if (q + 1 > size_r)
 		return (0);
-	while (y >= 0 || x >= 0 || o_f == 1)
+	r[q] = '\0';
+
+	for (p = q - 1; p >= 0; p++)
 	{
-		if (x < 0)
-			val1 = 0;
+		i--;
+		j--;
+		if (i >= 0)
+			f = n1[i] - '0';
 		else
-			val1 = *(n1 + x) - '0';
-		if (y < 0)
-			val2 = 0;
+			f = 0;
+		if (j >= 0)
+			s = n2[j] - '0';
 		else
-			val2 = *(n2 + y) - '0';
-		t_tot = val1 + val2 + o_f;
-
-		if (t_tot >= 10)
-			o_f = 1;
-		else
-			o_f = 0;
-		if (num >= (size_r - 1))
-			return (0);
-		*(r + num) = (t_tot % 10) + '0';
-		num++;
-		x--;
-		y--;
+			s = 0;
+		r[p] = (f + s + d) % 10 + '0';
+		d = (f + s + d) / 10;
 	}
-	if (num == size_r)
-		return (0);
-	*(r + num) = '\0';
-	rev_string(r)
+
+	if (d == 1)
+	{
+		r[q + 1] = '\0';
+		if (q + 2 > size_r)
+			return (0);
+		while (q-- >= 0)
+			r[q + 1] = r[q];
+		r[0] = d + '0'
+	}
 	return (r);
 }
