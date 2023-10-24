@@ -18,6 +18,6 @@ unsigned int _strspn(char *s, char *accept)
 			if (accept[Y_len] == '\0')
 				return (X_len);
 		}
-		return (X_len);
 	}
+	return (X_len);
 }
