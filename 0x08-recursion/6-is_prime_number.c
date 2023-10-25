@@ -25,10 +25,10 @@ int correct(int n, int i)
 {
 	if (n % i == 0 || n <= 1)
 	{
-		return (1);
+		return (0);
 	} else if (i >= n && n > 1)
 	{
-		return (0);
+		return (1);
 	}
 	return (correct(n, i + 1));
 }
