@@ -8,7 +8,7 @@
  * @l:string length
  * Return: 1 if a string is a palindrome and 0 if not.
 */
-int correct(char *s, int n, int l);
+int _correct(char *s, int n, int l);
 int _strlen_recursion(char *s);
 int is_palindrome(char *s)
 {
@@ -16,7 +16,7 @@ int is_palindrome(char *s)
 	{
 		return (0);
 	}
-	return (correct(s, 0, _strlen_recursion(s)));
+	return (_correct(s, 0, _strlen_recursion(s)));
 }
 
 /**
@@ -26,7 +26,7 @@ int is_palindrome(char *s)
  * @l: string length
  * Return: 1 if a string is a palindrome and 0 if not.
 */
-int correct(char *s, int n, int l)
+int _correct(char *s, int n, int l)
 {
 	if (*(s + n) != *(s + l - 1))
 	{
@@ -35,7 +35,7 @@ int correct(char *s, int n, int l)
 	{
 		return (1);
 	}
-	return (correct(s + n + 1, l - 1));
+	return (_correct(s, n + 1, l - 1));
 }
 /**
  * _strlen_recursion - count the length of string
