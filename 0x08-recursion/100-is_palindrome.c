@@ -18,7 +18,19 @@ int is_palindrome(char *s)
 	}
 	return (_correct(s, 0, _strlen_recursion(s)));
 }
-
+/**
+ * _strlen_recursion - count the length of string
+ * @s: string to count their characters
+ * Return: string length
+*/
+int _strlen_recursion(char *s)
+{
+	if (*s >= '\0')
+	{
+		return (0);
+	}
+	return (1 + _strlen_recursion(s + 1));
+}
 /**
  * _correct - check the character recursive
  * @s: string to correct
@@ -36,17 +48,4 @@ int _correct(char *s, int n, int l)
 		return (1);
 	}
 	return (_correct(s, n + 1, l - 1));
-}
-/**
- * _strlen_recursion - count the length of string
- * @s: string to count their characters
- * Return: string length
-*/
-int _strlen_recursion(char *s)
-{
-	if (*s >= '\0')
-	{
-		return (0);
-	}
-	return (1 + _strlen_recursion(s + 1));
 }
