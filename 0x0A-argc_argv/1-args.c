@@ -10,6 +10,6 @@
 */
 int main(int argc, char *argv[])
 {
-	printf("i\n", argc);
+	printf("%i\n", argc);
 	return (0);
 }
