@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 	int coins[] = {25, 10, 5, 2, 1};
 	int i, cent = 0;
-	int amount = atoi(argv[1]);
+	int amount;
 
 	if  (argc == 2)
 	{
@@ -19,6 +19,7 @@ int main(int argc, char *argv[])
 		{
 			if (amount >= coins[i])
 			{
+				amount = atoi(argv[1]);
 				cent += amount / coins[i];
 				amount = amount % coins[i];
 				if (amount % coins[i] == 0)
@@ -29,7 +30,7 @@ int main(int argc, char *argv[])
 		}
 	printf("%d\n", cent);
 	}
-	else if (argc == 0 || argc < 2)
+	else if (argc > 0 || argc > 2)
 	{
 		printf("Error\n");
 		return (1);
