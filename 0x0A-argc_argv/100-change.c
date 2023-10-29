@@ -11,12 +11,13 @@ int main(int argc, char *argv[])
 {
 	int coins[] = {25, 10, 5, 2, 1};
 	int i, cent = 0;
-	int amount;
 
 	if  (argc == 2)
 	{
 		for (i = 0; i < 5; i++)
 		{
+			int amount;
+
 			if (amount >= coins[i])
 			{
 				amount = atoi(argv[1]);
