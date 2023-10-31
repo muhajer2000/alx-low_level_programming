@@ -29,10 +29,12 @@ char *_strdup(char *str)
 		return (NULL);
 
 	else
-		do {
-			a++;
+	{
+		while (a < size)
+		{
 			str_dup[a] = str[a];
-		} while (a < size);
-
+			a++;
+		}
+	}
 	return (str_dup);
 }
