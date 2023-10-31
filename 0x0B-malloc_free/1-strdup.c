@@ -14,7 +14,7 @@ char *_strdup(char *str)
 	int size, a;
 	char *str_dup;
 
-	if (str == '\0')
+	if (str == NULL)
 		return (NULL);
 
 
@@ -25,12 +25,12 @@ char *_strdup(char *str)
 
 	if (str_dup == 0)
 		return (NULL);
-	do {
-		a++;
-		str_dup[a] = str[a];
-	} while (a < size)
+
+	else
+		do {
+			a++;
+			str_dup[a] = str[a];
+		} while (a < size);
 
 	return (str_dup);
-
-
 }
