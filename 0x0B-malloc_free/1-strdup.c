@@ -11,7 +11,7 @@
 */
 char *_strdup(char *str)
 {
-	int size, a;
+	int size = 0;
 	char *str_dup;
 
 	if (str == NULL)
@@ -20,17 +20,18 @@ char *_strdup(char *str)
 
 	while (str[size] != '\0')
 	{
-		//size++;
+		size++;
 	}
-	size++;
 
-	str_dup = malloc(size * sizeof(*str) + 1);
+	str_dup = malloc(size * sizeof(char) + 1);
 
 	if (str_dup == 0)
 		return (NULL);
 
 	else
 	{
+		int a = 0;
+
 		while (a < size)
 		{
 			str_dup[a] = str[a];
