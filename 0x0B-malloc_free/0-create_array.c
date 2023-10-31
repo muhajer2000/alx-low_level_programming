@@ -13,9 +13,10 @@ char *create_array(unsigned int size, char c)
 
 	ptr = (char *) malloc(size * sizeof(char));
 
-	for (int i = 0; i < size; i++)
+	int i;
+	for (i = 0; i < size; i++)
 	{
-		ptr[i] = 'H';
+		ptr[i] = 'c';
 
 	}
 	return (ptr);
