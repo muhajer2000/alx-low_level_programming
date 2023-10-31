@@ -31,7 +31,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	while (a < ac)
 	{
-		for (b = 0; av[a][b] != '\0'; j++, arr++)
+		for (b = 0; av[a][b] != '\0'; b++, arr++)
 			c[arr] = av[a][b];
 		c[arr] = '\n';
 		arr++;
