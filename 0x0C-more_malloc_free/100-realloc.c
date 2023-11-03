@@ -29,21 +29,16 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 			return (NULL);
 		return (a);
 	}
-	o_ptr = ptr;
-	if (new_size < old_size)
-	{
-		for (j = 0; j < new_size; j++)
-		{
-			a[j] = o_ptr[j];
-		}
-	}
 	if (new_size > old_size)
 	{
-		for (j = 0; j < old_size; j++)
+		a = malloc(new_size);
+		if (a == NULL)
+			return (NULL);
+		for (j = 0; j < old_size && j < new_size; j++)
 		{
-			a[j] = o_ptr[j];
+			*((char *)a + j) = *((char *)ptr + j);
 		}
+		free(ptr);
 	}
-	free(ptr);
 	return (a);
 }
