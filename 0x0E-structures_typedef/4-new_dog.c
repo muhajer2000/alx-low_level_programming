@@ -23,7 +23,7 @@ char *_strcpy(char *dest, char *src)
  * @str: string that count
  * Return: string count (lenght)
 */
-int *_strlen(char *str)
+int _strlen(char *str)
 {
 	int len = 0;
 
@@ -44,7 +44,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (!name || age < 0 || !owner)
 		return (NULL);
-	dogg = malloc(sizeof(dog_t));
+	dogg = (dog_t *)malloc(sizeof(dog_t));
 	if (dogg == NULL)
 		return (NULL);
 	(*dogg).name = malloc(sizeof(char) * (_strlen(name) + 1));
