@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * _strcpy - print string copy
@@ -61,7 +62,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	dogg->name = _strcpy(dogg->name, name);
+	dogg->name = strcpy(dogg->name, name);
 	dogg->age = age;
 	dogg->owner = _strcpy(dogg->owner, owner);
 	return (dogg);
