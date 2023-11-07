@@ -23,7 +23,7 @@ char *_strcpy(char *dest, char *src)
  * @str: string that count
  * Return: string count (lenght)
 */
-char *_strlen(char *str)
+int *_strlen(char *str)
 {
 	int len = 0;
 
