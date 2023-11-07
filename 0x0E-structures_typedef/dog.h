@@ -1,7 +1,6 @@
 #ifndef dog_h
 #define dog_h
 
-#define dog_t struct dog
 /**
  * struct dog - struct of dog proprites
  * Description: list of dog information by structure
@@ -18,6 +17,7 @@ struct dog
 };
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
+typedef struct dog dog_t
 
 
 #endif /*dog.h*/
