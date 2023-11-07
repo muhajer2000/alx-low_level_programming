@@ -1,6 +1,6 @@
 #include "dog.h"
 #include <stdlib.h>
-#include <string.h>
+
 
 /**
  * _strcpy - print string copy
@@ -13,10 +13,8 @@ char *_strcpy(char *dest, char *src)
 	int j;
 
 	for (j = 0; src[j]; j++)
-	{
 		dest[j] = src[j];
 	dest[j] = '\0';
-	}
 	return (dest);
 }
 /**
@@ -62,7 +60,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	dogg->name = strcpy(dogg->name, name);
+	dogg->name = _strcpy(dogg->name, name);
 	dogg->age = age;
 	dogg->owner = _strcpy(dogg->owner, owner);
 	return (dogg);
