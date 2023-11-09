@@ -10,10 +10,10 @@
 */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	unsigned int *j = size + array - 1;
+	int *j = size + array - 1;
 
 	if (size && action && array)
 		do {
 			action(*array++);
-		} while (array <= j)
+		} while (array <= j);
 }
